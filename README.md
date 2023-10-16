@@ -27,7 +27,8 @@ const PlayerList = () => {
 };
 
 ## API
-link aqui!
+link:
+https://developer.clashroyale.com/#/getting-started
 
 ## Conclusão
 
