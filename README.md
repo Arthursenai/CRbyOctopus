@@ -1,36 +1,44 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Introdução
 
-First, run the development server:
+Esta documentação fornece um guia detalhado sobre a API do Clash Royale implementada em React JS para a equipe Octopus. Ela aborda a estrutura e os componentes para facilitar a interação com a API.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Pré-requisitos
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js
+- React JS
+- Axios para chamadas de API
+- Aplicar classes para gerenciar o estado da aplicação
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Componentes
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+### PlayerList.js
 
-To learn more about Next.js, take a look at the following resources:
+Este componente exibe uma lista de jogadores do Clash Royale.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+jsx
+import React from 'react';
+import axios from 'axios';
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+const PlayerList = () => {
+  // Fetch data logic here
+};
 
-## Deploy on Vercel
+## API
+link aqui!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Conclusão
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+A API do Clash Royale em React JS é modular e projetada para ser fácil de usar. Isso permite que os membros da equipe Octopus adicionem, modifiquem ou removam funcionalidades de acordo com as necessidades do projeto.
+
+## Contribuidores
+
+- Arthur Borger - Tech Lead;
+- Isabela Souza;
+- João Victor Santos;
+- Matheus Zambon;
+- Nicoly Val.
+
+Para qualquer dúvida ou esclarecimento, entre em contato com a equipe de desenvolvimento Octopus!
