@@ -1,41 +1,45 @@
 "use client"
-import axios from 'axios';
 import styles from './page.module.css';
-import React, { useEffect, useState } from 'react';
-import { getCards, getLocations } from '@/data/cards'; 
+import { useEffect, useState } from 'react';
+import { getCards, getLocations } from '@/data/cards';
 function CardsRoute() {
   const [cards, setCards] = useState([]);
   const [locations, setLocations] = useState([]);
 
-  useEffect(() => {
-    getCards()
-      .then((cardsData) => setCards(cardsData))
-      .catch((error) => console.error('Error cards:', error));
+  const locationsFetch = async () => {
+    try {
+      const infos = await getLocations();
+      setLocations(infos);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-    getLocations()
-      .then((locationsData) => setLocations(locationsData))
-      .catch((error) => console.error('Error locations:', error));
+
+  const agentsFetch = async () => {
+    try {
+      const infos = await getCards();
+      setCards(infos);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    agentsFetch();
+    locationsFetch();
   }, []);
 
+
+
   return (
-    <div>
-      <h2>Cards</h2>
+    <div className={styles.main}>
+      <h2 className={styles.title}>Todas as Cartas</h2>
       {cards.map((card) => (
         <div className={styles.cardcontainer} key={card.id}>
-          <p>Id: {card.id}</p>
-          <p>Name: {card.name}</p>
-          <p>Max Level: {card.maxLevel}</p>
-          <p>Icon Url: {card.iconUrls.medium}</p>
-          <hr />
-        </div>
-      ))}
-
-      <h2>Locations</h2>
-      {locations.map((location) => (
-        <div key={location.id}>
-          <p>Id: {location.id}</p>
-          <p>Name: {location.name}</p>
-          <p>Is Country: {location.isCountry}</p>
+          <img className={styles.cardimage} src= {card.iconUrls.medium}></img>
+          <p className={styles.cardname}>Name: {card.name}</p>
+          <p className={styles.cardlevel}>Max Level: {card.maxLevel}</p>
           <hr />
         </div>
       ))}

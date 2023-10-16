@@ -1,3 +1,12 @@
-h1{
-    color: red;
+.main{
+    background-image: url(../../public/royalebackground.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.title{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
