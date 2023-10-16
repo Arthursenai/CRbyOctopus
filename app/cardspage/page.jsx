@@ -31,18 +31,24 @@ function CardsRoute() {
   }, []);
 
 
-
+  //card.id !== 26000071 || card.id !== 26000075 || card.id !== 26000081 &&
   return (
     <div className={styles.main}>
       <h2 className={styles.title}>Todas as Cartas</h2>
-      {cards.map((card) => (
-        <div className={styles.cardcontainer} key={card.id}>
-          <img className={styles.cardimage} src= {card.iconUrls.medium}></img>
-          <p className={styles.cardname}>Name: {card.name}</p>
-          <p className={styles.cardlevel}>Max Level: {card.maxLevel}</p>
-          <hr />
-        </div>
-      ))}
+      <div className={styles.cardsbox}>
+        {
+          cards.map((card) =>
+
+          card.id === 26000071 ? null : card.id === 26000075 ? null : card.id == 26000082 ? null : card.id === 26000081 ? null :
+            (
+              <div className={styles.cardcontainer} key={card.id}>
+                <img className={styles.cardimage} src={card.iconUrls.medium}></img>
+                <p className={styles.cardname}>Name: {card.name}</p>
+                <p className={styles.cardlevel}>Max Level: {card.maxLevel}</p>
+                <hr />
+              </div>
+            ))}
+      </div>
     </div>
   )
 };

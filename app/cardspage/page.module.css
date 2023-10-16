@@ -1,12 +1,25 @@
 .main{
     background-image: url(../../public/royalebackground.png);
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
+    border: none;
 }
 .title{
     font-size: 3rem;
-    color: white;
     text-align: center;
+    border: none;
+}
+
+.cardsbox{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.cardimage{
+    width: 8rem;
+    
+    height: 9.5rem;
+    margin: 1rem;
+    border: none;
 }
