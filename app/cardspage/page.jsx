@@ -1,5 +1,6 @@
 "use client"
 import axios from 'axios';
+import styles from './page.module.css';
 import React, { useEffect, useState } from 'react';
 import { getCards, getLocations } from '@/data/cards'; 
 function CardsRoute() {
@@ -20,7 +21,7 @@ function CardsRoute() {
     <div>
       <h2>Cards</h2>
       {cards.map((card) => (
-        <div key={card.id}>
+        <div className={styles.cardcontainer} key={card.id}>
           <p>Id: {card.id}</p>
           <p>Name: {card.name}</p>
           <p>Max Level: {card.maxLevel}</p>
