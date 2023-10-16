@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Isto é um [Next.js](https://nextjs.org/) projeto inicializado com [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Introdução
 
@@ -27,8 +27,7 @@ const PlayerList = () => {
 };
 
 ## API
-link:
-https://developer.clashroyale.com/#/getting-started
+Link da API
 
 ## Conclusão
 
