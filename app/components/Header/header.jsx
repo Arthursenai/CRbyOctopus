@@ -1,11 +1,9 @@
 'use client'
-import DropDown from '../dropdown/dropdown';
+
 import styles from './header.module.css';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
-
-
-
 
 
  function Header() {
@@ -28,14 +26,12 @@ import { useState } from 'react';
             <nav className={styles.nav}>
 
                 <div onClick={teste} className={styles.menu}>
-                    <div className={styles.menuLine}></div>
-                    <div className={styles.menuLine}></div>
-                    <div className={styles.menuLine}></div>
+                <Image className={styles.logoclash} src={'/Clash_Royale_Logo.png'} alt="akfadfa" width={260} height={100}></Image>
                 </div>
 
-                <DropDown type={type} />
+               
 
-                <Link className={styles.logo} href="/">OCTOPUS</Link>
+          
                 
             </nav>
 

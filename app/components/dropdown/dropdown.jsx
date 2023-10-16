@@ -7,8 +7,8 @@ function DropDown({ type }) {
     if (type === true) {
         return (
             <ul className={styles.navList}>
-                <NavLinks className={styles.links} rota="/apiclash" text="Cadastro" />
-                <NavLinks className={styles.links} rota="/" text="API" />
+                
+                <NavLinks className={styles.links} rota="/" text="Cadastro" />
 
             </ul>
         );
