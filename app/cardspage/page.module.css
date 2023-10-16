@@ -14,7 +14,7 @@
 .cardsbox{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: 7.5rem;
 }
 .cardimage{
     width: 8rem;
@@ -22,4 +22,9 @@
     height: 9.5rem;
     margin: 1rem;
     border: none;
+}
+.cardcontainer{
+    background-color: #e8e8e8;
+    margin: 1rem;
+    border-radius: 8px;
 }

@@ -45,7 +45,6 @@ function CardsRoute() {
                 <img className={styles.cardimage} src={card.iconUrls.medium}></img>
                 <p className={styles.cardname}>Name: {card.name}</p>
                 <p className={styles.cardlevel}>Max Level: {card.maxLevel}</p>
-                <hr />
               </div>
             ))}
       </div>
