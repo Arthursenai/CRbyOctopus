@@ -1,0 +1,22 @@
+.navList{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 8rem;
+    height: 9rem;
+    background-color: rgb(17, 17, 17);
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: #D1D2F0 solid 5px;
+    border-right: #D1D2F0 solid 5px;
+  
+    
+}
+
+
+.navList.active{
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+}
